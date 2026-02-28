@@ -1,0 +1,22 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment
+.env
+
+# Runtime generated
+registered_hashes.json
+environment_snapshot.txt
+uploads/
+
+# OS
+.DS_Store
+
+# Large datasets
+dataset/authorized/
+dataset/unknown/
+dataset/poison/

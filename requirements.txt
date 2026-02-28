@@ -1,0 +1,12 @@
+# Existing dependencies (already in your venv)
+flask
+flask-cors
+deepface
+scipy
+scikit-learn
+numpy
+
+# New dependencies for blockchain bridge
+web3>=6.0.0
+eth-account>=0.10.0
+python-dotenv>=1.0.0
