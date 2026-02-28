@@ -7,7 +7,7 @@ const fs         = require("fs");
 const path       = require("path");
 
 // Load ABIs from Hardhat artifacts
-const BioLedgerArtifact = require("../artifacts/contracts/core/BioLedger.sol/BioLedger.json");
+const BioLedgerArtifact = require("../artifacts/contracts/core/BioLedgerV2.sol/BioLedgerV2.json");
 const BioTokenArtifact  = require("../artifacts/contracts/governance/BioToken.sol/BioToken.json");
 const BioDAOArtifact    = require("../artifacts/contracts/governance/BioDAO.sol/BioDAO.json");
 
@@ -82,11 +82,11 @@ function getContracts(networkName) {
   const provider   = getProvider();
   const signer     = getSigner(provider);
 
-  const bioLedger = new ethers.Contract(
-    deployment.contracts.BioLedger,
-    BioLedgerArtifact.abi,
-    signer
-  );
+ const bioLedger = new ethers.Contract(
+  deployment.contracts.BioLedgerV2,
+  BioLedgerArtifact.abi,
+  signer
+);
 
   const bioToken = new ethers.Contract(
     deployment.contracts.BioToken,
