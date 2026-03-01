@@ -7,3 +7,21 @@ typechain-types/
 .env
 deployments/*.json
 !deployments/.gitkeep
+
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+registered_hashes.json
+environment_snapshot.txt
+centroid.pkl
+uploads/
+
+dataset/authorized/
+dataset/poison/
+dataset/unknown/
+
+.DS_Store
